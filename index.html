@@ -26,10 +26,10 @@
     <meta property="og:locale" content="tr_TR" />
     <!-- Burayı kendi domain adresinle değiştir -->
     <meta property="og:url" content="https://www.ornek-domain.com" />
-    <!-- Burayı site için kullanacağın kapak görseli ile değiştir -->
+    <!-- Görseli sonradan eklersen bu URL'yi güncelleyebilirsin -->
     <meta
       property="og:image"
-      content="https://www.ornek-domain.com/images/kapak-elektrikci.jpg"
+      content="https://www.ornek-domain.com/static/kapak-elektrikci.jpg"
     />
 
     <!-- Canonical (SEO için tercih edilen URL) -->
@@ -89,7 +89,9 @@
             </p>
             <div class="hero-actions">
               <!-- Telefon numarası -->
-              <a href="tel:+905367977997" class="btn-primary">Hemen Ara: 0 536 797 79 97</a>
+              <a href="tel:+905367977997" class="btn-primary">
+                Hemen Ara: 0 536 797 79 97
+              </a>
               <!-- WhatsApp -->
               <a
                 href="https://wa.me/905367977997?text=Merhaba,%20BSY%20B%C3%BCy%C3%BCk%C3%A7ekmece%20Elektrik%27ten%20hizmet%20almak%20istiyorum."
@@ -105,15 +107,17 @@
             </p>
           </div>
 
-          <div class="hero-media">
-            <!-- Buraya gerçek bir foto koy: elektrikçi, pano vs. -->
-            <figure class="hero-image-wrapper">
-              <img
-                src="images/elektrik-usta.jpg"
-                alt="İstanbul Büyükçekmece'de sigorta panosu kontrolü yapan elektrik ustası"
-                class="hero-image"
-              />
-            </figure>
+          <!-- Görsel blok: tamamen CSS tabanlı, ekstra dosya gerektirmez -->
+          <div class="hero-media" aria-hidden="true">
+            <div class="hero-illustration hero-illustration--main">
+              <div class="hero-illustration-icon">⚡</div>
+              <div class="hero-illustration-lines">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="hero-illustration-chip"></div>
+            </div>
           </div>
         </div>
       </section>
@@ -208,21 +212,15 @@
         </div>
       </section>
 
-      <!-- GÖRSEL BLOK (OPSİYONEL) -->
+      <!-- GÖRSEL BLOK (CSS tabanlı “illüstrasyon”lar) -->
       <section class="section section-gallery">
         <div class="container gallery">
           <figure class="gallery-item">
-            <img
-              src="images/sigorta-panosu.jpg"
-              alt="Büyükçekmece'de düzenlenmiş temiz bir sigorta panosu"
-            />
+            <div class="gallery-illustration gallery-illustration--panel"></div>
             <figcaption>Sigorta panosu düzenleme ve yenileme</figcaption>
           </figure>
           <figure class="gallery-item">
-            <img
-              src="images/avize-montaj.jpg"
-              alt="Avize ve aydınlatma montajı yapılan salon"
-            />
+            <div class="gallery-illustration gallery-illustration--lighting"></div>
             <figcaption>Avize ve aydınlatma montajı</figcaption>
           </figure>
         </div>
@@ -282,7 +280,7 @@
             <div>
               <h3>WhatsApp</h3>
               <a
-                href="https://wa.me/905367977997?text=Merhaba,%20BSY%20B%C3%BCy%C3%BCk%C3%A7ekmece%20Elektrik%27ten%20hizmet%20almak%20istiyorum."
+                href="https://wa.me/905367977997?text=Merhaba,%20BSY%20B%C3%BCy%C3%BCk%C3%A7mece%20Elektrik%27ten%20hizmet%20almak%20istiyorum."
                 class="contact-link"
                 target="_blank"
                 rel="noopener noreferrer"

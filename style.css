@@ -11,8 +11,8 @@
   --bg-alt: #020617;
   --fg: #e5e7eb;
   --muted: #9ca3af;
-  --accent: #22c55e;
-  --accent-soft: rgba(34, 197, 94, 0.16);
+  --accent: #f97316; /* Turuncu, elektrik hissi için */
+  --accent-soft: rgba(249, 115, 22, 0.18);
   --border: #111827;
 }
 
@@ -24,7 +24,7 @@ body {
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     sans-serif;
-  background: radial-gradient(circle at top, #1f2937 0, #020617 45%);
+  background: radial-gradient(circle at top, #111827 0, #020617 45%);
   color: var(--fg);
   line-height: 1.6;
 }
@@ -47,10 +47,10 @@ a {
   backdrop-filter: blur(14px);
   background: linear-gradient(
     to bottom,
-    rgba(15, 23, 42, 0.95),
-    rgba(15, 23, 42, 0.4)
+    rgba(15, 23, 42, 0.96),
+    rgba(15, 23, 42, 0.55)
   );
-  border-bottom: 1px solid rgba(15, 23, 42, 0.8);
+  border-bottom: 1px solid rgba(15, 23, 42, 0.9);
 }
 
 .topbar .container {
@@ -62,7 +62,9 @@ a {
 
 .logo {
   font-weight: 700;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.95rem;
 }
 
 .nav {
@@ -105,12 +107,12 @@ a {
 .hero-inner {
   display: grid;
   grid-template-columns: minmax(0, 1.6fr) minmax(0, 1.2fr);
-  gap: 2rem;
+  gap: 2.25rem;
   align-items: center;
 }
 
 .hero-text h1 {
-  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-size: clamp(2.1rem, 4vw, 3rem);
   line-height: 1.1;
   margin-bottom: 1rem;
 }
@@ -118,13 +120,19 @@ a {
 .hero-text p {
   max-width: 36rem;
   color: var(--muted);
-  margin-bottom: 2rem;
+  margin-bottom: 1.7rem;
 }
 
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.service-area {
+  font-size: 0.9rem;
+  color: var(--muted);
 }
 
 .btn-primary,
@@ -147,7 +155,7 @@ a {
 
 .btn-primary {
   background: var(--accent);
-  color: #022c22;
+  color: #1f2937;
   font-weight: 600;
   box-shadow: 0 14px 40px var(--accent-soft);
 }
@@ -155,17 +163,17 @@ a {
 .btn-primary:hover {
   transform: translateY(-1px);
   box-shadow: 0 22px 60px var(--accent-soft);
-  background: #16a34a;
+  background: #ea580c;
 }
 
 .btn-ghost {
-  border-color: rgba(148, 163, 184, 0.5);
+  border-color: rgba(148, 163, 184, 0.6);
   color: var(--fg);
-  background: rgba(15, 23, 42, 0.8);
+  background: rgba(15, 23, 42, 0.9);
 }
 
 .btn-ghost:hover {
-  border-color: rgba(148, 163, 184, 0.9);
+  border-color: rgba(148, 163, 184, 1);
   background: rgba(15, 23, 42, 1);
 }
 
@@ -174,14 +182,24 @@ a {
 .hero-card {
   border-radius: 1.25rem;
   border: 1px solid var(--border);
-  background: radial-gradient(circle at top left, #020617 0, #020617 45%);
+  background: radial-gradient(
+    circle at top left,
+    rgba(248, 250, 252, 0.04) 0,
+    #020617 55%
+  );
   padding: 1.5rem 1.75rem;
   box-shadow: 0 18px 45px rgba(0, 0, 0, 0.55);
 }
 
 .hero-card h2 {
   font-size: 1.1rem;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.6rem;
+}
+
+.hero-card-text {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-bottom: 0.8rem;
 }
 
 .hero-card ul {
@@ -204,7 +222,7 @@ a {
 }
 
 .section-alt {
-  background: rgba(15, 23, 42, 0.7);
+  background: rgba(15, 23, 42, 0.8);
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
 }
@@ -217,12 +235,20 @@ a {
   gap: 1.5rem;
 }
 
+.grid-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .card {
   border-radius: 1rem;
   border: 1px solid var(--border);
   padding: 1.3rem 1.4rem;
-  background: rgba(15, 23, 42, 0.9);
+  background: rgba(15, 23, 42, 0.95);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+.card.soft {
+  background: rgba(15, 23, 42, 0.8);
 }
 
 .card h3 {
@@ -254,13 +280,13 @@ a {
   margin-bottom: 0.4rem;
 }
 
-.contact-grid a {
-  color: var(--accent);
+.contact-link {
   text-decoration: none;
+  color: var(--accent);
   font-size: 0.95rem;
 }
 
-.contact-grid a:hover {
+.contact-link:hover {
   text-decoration: underline;
 }
 
@@ -282,10 +308,11 @@ a {
 
   .hero-card {
     order: -1;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
 
-  .grid {
+  .grid,
+  .grid-3 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
@@ -294,7 +321,7 @@ a {
   }
 
   .nav {
-    display: none; /* İstersen burger menü yaparsın, burada basit tuttum */
+    display: none;
   }
 
   .topbar .container {

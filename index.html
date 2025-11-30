@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Şirket Adı - Kurumsal Tanıtım</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Şirketinizin ne yaptığını 1–2 cümlede özetleyen açıklama.">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container">
+        <div class="logo">Şirket Adı</div>
+        <nav class="nav">
+          <a href="#hakkimizda">Hakkımızda</a>
+          <a href="#hizmetler">Hizmetler</a>
+          <a href="#iletisim">İletişim</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="hakkimizda">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <h1>Net bir değer önerisi yaz.</h1>
+            <p>
+              “Biz X sektöründe Y problemi çözen, Z odaklı bir ekibiz.”
+              Cümleyi böyle tok, kısa ve anlaşılır yaz.
+            </p>
+            <div class="hero-actions">
+              <a href="#iletisim" class="btn-primary">Teklif Al</a>
+              <a href="#hizmetler" class="btn-ghost">Hizmetlerimiz</a>
+            </div>
+          </div>
+          <div class="hero-card">
+            <h2>Kısa Özet</h2>
+            <ul>
+              <li>✔ 10+ yıl sektör deneyimi</li>
+              <li>✔ Ölçeklenebilir çözümler</li>
+              <li>✔ Şeffaf fiyatlandırma</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="hizmetler">
+        <div class="container">
+          <h2>Hizmetler</h2>
+          <div class="grid">
+            <div class="card">
+              <h3>Hizmet 1</h3>
+              <p>Kime, hangi problemi çözdüğünü çok net yaz.</p>
+            </div>
+            <div class="card">
+              <h3>Hizmet 2</h3>
+              <p>Mümkünse ölçülebilir fayda: “%30 maliyet, %50 zaman kazanımı” gibi.</p>
+            </div>
+            <div class="card">
+              <h3>Hizmet 3</h3>
+              <p>Klişe laf doldurmak yerine gerçekten ayırt edici bir noktayı koy.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="iletisim">
+        <div class="container">
+          <h2>İletişim</h2>
+          <p class="contact-text">
+            Aşırı karmaşık form yerine, direkt ulaşabilecekleri net bilgiler ver.
+          </p>
+          <div class="contact-grid">
+            <div>
+              <h3>E-posta</h3>
+              <a href="mailto:info@ornek.com">info@ornek.com</a>
+            </div>
+            <div>
+              <h3>Telefon</h3>
+              <a href="tel:+900000000000">+90 000 000 00 00</a>
+            </div>
+            <div>
+              <h3>Adres</h3>
+              <p>Kısa ama güven veren bir adres satırı.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <span>© <span id="year"></span> Şirket Adı. Tüm hakları saklıdır.</span>
+      </div>
+      <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+      </script>
+    </footer>
+  </body>
+</html>

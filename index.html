@@ -2,13 +2,63 @@
 <html lang="tr">
   <head>
     <meta charset="utf-8" />
-    <title>BSY Büyükçekmece Elektrik - Elektrik Tesisat ve Arıza Hizmetleri</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BSY Büyükçekmece Elektrik | Elektrikçi, Arıza ve Tesisat Hizmetleri</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
     <meta
       name="description"
-      content="Konut ve iş yerleri için elektrik arıza, tesisat, sigorta panosu, avize montajı ve daha fazlası. Hızlı ve güvenilir elektrikçi hizmeti."
+      content="BSY Büyükçekmece Elektrik; İstanbul Büyükçekmece ve çevresinde elektrik arıza, tesisat, sigorta panosu ve aydınlatma montajı hizmetleri sunar. Hızlı, güvenilir ve yerel elektrikçi."
     />
+    <meta
+      name="keywords"
+      content="Büyükçekmece elektrikçi, İstanbul elektrikçi, elektrik arıza, elektrik tesisat, sigorta panosu, avize montajı, BSY Büyükçekmece Elektrik"
+    />
+
+    <!-- Open Graph (sosyal medya ön izlemesi) -->
+    <meta property="og:title" content="BSY Büyükçekmece Elektrik" />
+    <meta
+      property="og:description"
+      content="İstanbul Büyükçekmece'de elektrik arıza ve tesisat işleriniz için güvenilir elektrikçi."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="tr_TR" />
+    <!-- Burayı kendi domain adresinle değiştir -->
+    <meta property="og:url" content="https://www.ornek-domain.com" />
+    <!-- Burayı site için kullanacağın kapak görseli ile değiştir -->
+    <meta
+      property="og:image"
+      content="https://www.ornek-domain.com/images/kapak-elektrikci.jpg"
+    />
+
+    <!-- Canonical (SEO için tercih edilen URL) -->
+    <!-- Bu adresi kendi domain'inle güncelle -->
+    <link rel="canonical" href="https://www.ornek-domain.com" />
+
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Yapılandırılmış veri: Yerel elektrikçi (SEO için) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Electrician",
+        "name": "BSY Büyükçekmece Elektrik",
+        "description": "İstanbul Büyükçekmece'de elektrik arıza, tesisat ve aydınlatma montajı hizmetleri.",
+        "telephone": "+90-536-797-79-97",
+        "areaServed": {
+          "@type": "AdministrativeArea",
+          "name": "İstanbul Büyükçekmece"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Büyükçekmece",
+          "addressRegion": "İstanbul",
+          "addressCountry": "TR"
+        },
+        "url": "https://www.ornek-domain.com"
+      }
+    </script>
   </head>
   <body>
     <header class="topbar">
@@ -17,6 +67,7 @@
         <nav class="nav">
           <a href="#hizmetler">Hizmetler</a>
           <a href="#neden-biz">Neden Biz</a>
+          <a href="#sss">Sık Sorulanlar</a>
           <a href="#iletisim">İletişim</a>
         </nav>
       </div>
@@ -27,16 +78,21 @@
       <section class="hero">
         <div class="container hero-inner">
           <div class="hero-text">
-            <h1>Elektrik arıza ve tesisat işleriniz için güvenilir çözüm.</h1>
+            <span class="badge">İstanbul / Büyükçekmece Elektrikçi</span>
+            <h1>Elektrik arıza ve tesisat işleriniz için yerel, güvenilir çözüm.</h1>
             <p>
-              Konut ve iş yerlerinizde tüm elektrik arızalarınız, yeni tesisat
-              işleriniz, sigorta panosu düzenleme ve aydınlatma montajlarınız
-              için profesyonel hizmet sunuyoruz.
+              BSY Büyükçekmece Elektrik olarak, konut ve iş yerlerinizde
+              <strong>elektrik arıza</strong>, <strong>yeni tesisat</strong>,
+              <strong>sigorta panosu düzenleme</strong> ve
+              <strong>aydınlatma montajı</strong> gibi tüm işlerinizde profesyonel
+              ve güvenli hizmet sunuyoruz.
             </p>
             <div class="hero-actions">
-              <a href="tel:+905367977997" class="btn-primary">Hemen Ara</a>
+              <!-- Telefon numarası -->
+              <a href="tel:+905367977997" class="btn-primary">Hemen Ara: 0 536 797 79 97</a>
+              <!-- WhatsApp -->
               <a
-                href="https://wa.me/905367977997?text=Merhaba,%20elektrik%20hizmeti%20i%C3%A7in%20ileti%C5%9Fime%20ge%C3%A7mek%20istiyorum."
+                href="https://wa.me/905367977997?text=Merhaba,%20BSY%20B%C3%BCy%C3%BCk%C3%A7ekmece%20Elektrik%27ten%20hizmet%20almak%20istiyorum."
                 class="btn-ghost"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -45,21 +101,19 @@
               </a>
             </div>
             <p class="service-area">
-              Hizmet bölgesi: İstanbul ve çevresi
+              Hizmet bölgesi: <strong>İstanbul / Büyükçekmece ve yakın çevresi</strong>
             </p>
           </div>
 
-          <div class="hero-card">
-            <h2>Acil elektrik arızası mı var?</h2>
-            <p class="hero-card-text">
-              Sigorta sürekli atıyorsa, prizler çalışmıyorsa veya aydınlatma
-              sorun yaşıyorsanız, hızlıca ulaşın:
-            </p>
-            <ul>
-              <li>✔ Kısa devre ve arıza tespiti</li>
-              <li>✔ Sigorta ve pano kontrolleri</li>
-              <li>✔ Priz, anahtar ve aydınlatma sorunları</li>
-            </ul>
+          <div class="hero-media">
+            <!-- Buraya gerçek bir foto koy: elektrikçi, pano vs. -->
+            <figure class="hero-image-wrapper">
+              <img
+                src="images/elektrik-usta.jpg"
+                alt="İstanbul Büyükçekmece'de sigorta panosu kontrolü yapan elektrik ustası"
+                class="hero-image"
+              />
+            </figure>
           </div>
         </div>
       </section>
@@ -67,50 +121,57 @@
       <!-- HİZMETLER -->
       <section class="section" id="hizmetler">
         <div class="container">
-          <h2>Verdiğimiz Hizmetler</h2>
+          <h2>Elektrik Hizmetlerimiz</h2>
+          <p class="section-intro">
+            BSY Büyükçekmece Elektrik; ev, ofis ve iş yerleriniz için kapsamlı
+            elektrik hizmetleri sunar. Aşağıda en sık verilen hizmetlerimizin
+            öne çıkanlarını görebilirsiniz.
+          </p>
           <div class="grid">
-            <div class="card">
-              <h3>Elektrik Arıza Tespiti</h3>
+            <article class="card">
+              <h3>Büyükçekmece Elektrik Arıza Tespiti</h3>
               <p>
                 Sürekli atan sigortalar, çalışmayan prizler, yanıp sönen
-                ışıklar gibi tüm arızalar için hızlı tespit ve çözüm.
+                aydınlatmalar ve beklenmedik kesintiler için hızlı arıza tespiti
+                ve kalıcı çözüm.
               </p>
-            </div>
-            <div class="card">
-              <h3>Yeni Tesisat ve Yenileme</h3>
+            </article>
+            <article class="card">
+              <h3>Yeni Elektrik Tesisatı ve Yenileme</h3>
               <p>
-                Yeni daire ve iş yerleri için komple elektrik tesisatı veya
-                eski tesisatların yenilenmesi.
+                Yeni daire, ofis veya dükkanlar için komple elektrik tesisatı;
+                eski, riskli tesisatların güncel standartlara uygun şekilde
+                yenilenmesi.
               </p>
-            </div>
-            <div class="card">
-              <h3>Sigorta ve Pano Düzenleme</h3>
+            </article>
+            <article class="card">
+              <h3>Sigorta Panosu ve Kaçak Akım Rölesi</h3>
               <p>
-                Sigorta kutusu, kaçak akım rolesi ve panoların güvenlik
-                standartlarına uygun hale getirilmesi.
+                Sigorta kutusu düzenleme, kaçak akım rölesi montajı ve pano
+                revizyonu ile daha güvenli bir elektrik altyapısı.
               </p>
-            </div>
-            <div class="card">
-              <h3>Aydınlatma ve Avize Montajı</h3>
+            </article>
+            <article class="card">
+              <h3>Avize ve Aydınlatma Montajı</h3>
               <p>
                 Avize, spot, LED, sensörlü aydınlatma ve dekoratif ışık
-                montajları.
+                montajları; hem estetik hem güvenli kurulum.
               </p>
-            </div>
-            <div class="card">
-              <h3>Priz ve Anahtar İşleri</h3>
+            </article>
+            <article class="card">
+              <h3>Priz, Anahtar ve Topraklama İşleri</h3>
               <p>
-                Priz çoğaltma, yer değiştirme, topraklama, anahtar
-                yenileme ve daha fazlası.
+                Yeni priz ekleme, yer değiştirme, anahtar yenileme ve
+                topraklama kontrolleri ile daha konforlu kullanım.
               </p>
-            </div>
-            <div class="card">
-              <h3>Arıza Sonrası Kontroller</h3>
+            </article>
+            <article class="card">
+              <h3>Arıza Sonrası Genel Kontrol</h3>
               <p>
-                Yapılan işlemler sonrası tesisatın genel güvenlik ve yük
-                kontrolünün sağlanması.
+                Yapılan işlem sonrası tesisatın genel güvenlik ve yük
+                dengesinin kontrol edilmesi; olası risklerin önceden tespiti.
               </p>
-            </div>
+            </article>
           </div>
         </div>
       </section>
@@ -118,29 +179,85 @@
       <!-- NEDEN BİZ -->
       <section class="section section-alt" id="neden-biz">
         <div class="container">
-          <h2>Neden Bizi Tercih Etmelisiniz?</h2>
+          <h2>Neden BSY Büyükçekmece Elektrik?</h2>
           <div class="grid grid-3">
-            <div class="card soft">
-              <h3>Uzmanlık</h3>
+            <article class="card soft">
+              <h3>Yerel ve Ulaşılabilir</h3>
               <p>
-                Elektrik tesisatı ve arıza konusunda saha tecrübesi yüksek,
-                işini bilen ustalarla çalışıyoruz.
+                İstanbul <strong>Büyükçekmece</strong> merkezli olduğumuz için,
+                bölgeyi ve binaların yapısını iyi biliyoruz. Böylece daha hızlı
+                ve doğru çözümler sunuyoruz.
               </p>
-            </div>
-            <div class="card soft">
+            </article>
+            <article class="card soft">
               <h3>Güvenlik Önceliğimiz</h3>
               <p>
                 Tüm işlemler, can ve mal güvenliğini önceleyen elektrik
-                standartlarına uygun şekilde yapılır.
+                standartlarına uygun şekilde yapılır. Geçici değil, güvenli
+                çözümler üretiriz.
               </p>
-            </div>
-            <div class="card soft">
-              <h3>Şeffaf Fiyatlandırma</h3>
+            </article>
+            <article class="card soft">
+              <h3>Net Fiyat, Sürpriz Yok</h3>
               <p>
-                İş öncesi mümkün olduğunca net fiyat bilgisi, gizli masraf
-                yok. Neye kaç lira ödediğiniz belli olur.
+                İş öncesi mümkün olduğunca net fiyat bilgisi verilir.
+                Müşterilerimizin neye kaç lira ödediği en baştan bellidir.
               </p>
-            </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- GÖRSEL BLOK (OPSİYONEL) -->
+      <section class="section section-gallery">
+        <div class="container gallery">
+          <figure class="gallery-item">
+            <img
+              src="images/sigorta-panosu.jpg"
+              alt="Büyükçekmece'de düzenlenmiş temiz bir sigorta panosu"
+            />
+            <figcaption>Sigorta panosu düzenleme ve yenileme</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="images/avize-montaj.jpg"
+              alt="Avize ve aydınlatma montajı yapılan salon"
+            />
+            <figcaption>Avize ve aydınlatma montajı</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- SSS -->
+      <section class="section section-alt" id="sss">
+        <div class="container">
+          <h2>Sık Sorulan Sorular</h2>
+          <div class="faq">
+            <details>
+              <summary>Büyükçekmece dışına da geliyor musunuz?</summary>
+              <p>
+                Ana hizmet bölgemiz İstanbul <strong>Büyükçekmece</strong> ve
+                yakın çevresidir. Talebe göre civar ilçeler için de hizmet
+                verebiliyoruz; detaylı bilgi için lütfen arayın.
+              </p>
+            </details>
+            <details>
+              <summary>Acil elektrik arızası için ne yapmalıyım?</summary>
+              <p>
+                Öncelikle can güvenliğiniz için ıslak alanlardan uzak durun ve
+                mümkünse ana sigortayı kapatın. Ardından
+                <a href="tel:+905367977997">0 536 797 79 97</a> numaralı
+                telefondan bize ulaşın.
+              </p>
+            </details>
+            <details>
+              <summary>Keşif veya fiyat bilgisi nasıl alabilirim?</summary>
+              <p>
+                WhatsApp üzerinden fotoğraf göndererek veya telefonla kısaca
+                anlatarak ön bilgi alabilirsiniz. Gerekirse yerinde keşif
+                sonrası net fiyatlandırma yapılır.
+              </p>
+            </details>
           </div>
         </div>
       </section>
@@ -150,21 +267,22 @@
         <div class="container">
           <h2>İletişim</h2>
           <p class="contact-text">
-            Tüm elektrik arıza ve tesisat işleriniz için telefon veya WhatsApp
-            üzerinden kolayca ulaşabilirsiniz.
+            Tüm <strong>elektrik arıza</strong> ve
+            <strong>elektrik tesisat</strong> işleriniz için bize telefon veya
+            WhatsApp üzerinden dilediğiniz zaman ulaşabilirsiniz.
           </p>
 
           <div class="contact-grid">
             <div>
               <h3>Telefon</h3>
               <a href="tel:+905367977997" class="contact-link">
-                +90 536 797 79 97
+                0 536 797 79 97
               </a>
             </div>
             <div>
               <h3>WhatsApp</h3>
               <a
-                href="https://wa.me/905367977997?text=Merhaba,%20elektrik%20hizmeti%20i%C3%A7in%20ileti%C5%9Fime%20ge%C3%A7mek%20istiyorum."
+                href="https://wa.me/905367977997?text=Merhaba,%20BSY%20B%C3%BCy%C3%BCk%C3%A7ekmece%20Elektrik%27ten%20hizmet%20almak%20istiyorum."
                 class="contact-link"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -175,7 +293,8 @@
             <div>
               <h3>Hizmet Bölgesi</h3>
               <p>
-                İstanbul Büyükçekmece ve çevresi  
+                İstanbul / Büyükçekmece  
+                ve talebe göre yakın ilçeler
               </p>
             </div>
           </div>

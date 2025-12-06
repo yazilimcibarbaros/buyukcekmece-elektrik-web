@@ -11,7 +11,8 @@
   --bg-alt: #020617;
   --fg: #e5e7eb;
   --muted: #9ca3af;
-  --accent: #f97316; /* Turuncu, elektrik vurgusu */
+  --accent: #f97316;
+  /* Turuncu, elektrik vurgusu */
   --accent-soft: rgba(249, 115, 22, 0.18);
   --border: #111827;
 }
@@ -45,11 +46,9 @@ a {
   top: 0;
   z-index: 10;
   backdrop-filter: blur(14px);
-  background: linear-gradient(
-    to bottom,
-    rgba(15, 23, 42, 0.96),
-    rgba(15, 23, 42, 0.55)
-  );
+  background: linear-gradient(to bottom,
+      rgba(15, 23, 42, 0.96),
+      rgba(15, 23, 42, 0.55));
   border-bottom: 1px solid rgba(15, 23, 42, 0.9);
 }
 
@@ -161,6 +160,12 @@ a {
 .hero-media {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.hero-logo {
+  max-width: 320px;
+  width: 100%;
 }
 
 .hero-illustration {
@@ -201,11 +206,9 @@ a {
 .hero-illustration-lines span {
   height: 4px;
   border-radius: 999px;
-  background: linear-gradient(
-    to right,
-    rgba(148, 163, 184, 0.2),
-    rgba(249, 115, 22, 0.8)
-  );
+  background: linear-gradient(to right,
+      rgba(148, 163, 184, 0.2),
+      rgba(249, 115, 22, 0.8));
 }
 
 .hero-illustration-lines span:nth-child(2) {
@@ -342,8 +345,9 @@ a {
 
 /* Gallery */
 
+
 .section-gallery {
-  padding-top: 0.5rem;
+  padding-top: 3rem;
 }
 
 .gallery {
@@ -360,71 +364,28 @@ a {
 }
 
 .gallery-illustration {
+  display: block;
   width: 100%;
-  height: 220px;
-  position: relative;
-  overflow: hidden;
-}
-
-/* Sigorta panosu illüstrasyonu */
-
-.gallery-illustration--panel {
-  background: radial-gradient(circle at top, #0f172a 0, #020617 55%);
-}
-
-.gallery-illustration--panel::before,
-.gallery-illustration--panel::after {
-  content: "";
-  position: absolute;
-  border-radius: 0.8rem;
-  border: 1px solid rgba(148, 163, 184, 0.5);
-  background: rgba(15, 23, 42, 0.9);
-}
-
-.gallery-illustration--panel::before {
-  inset: 18% 14%;
-}
-
-.gallery-illustration--panel::after {
-  inset: 30% 24%;
-  border-style: dashed;
-}
-
-/* Aydınlatma illüstrasyonu */
-
-.gallery-illustration--lighting {
-  background: radial-gradient(circle at top, #f59e0b 0, #020617 60%);
-}
-
-.gallery-illustration--lighting::before {
-  content: "💡";
-  position: absolute;
-  top: 24%;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 3rem;
-  filter: drop-shadow(0 10px 25px rgba(251, 191, 36, 0.7));
-}
-
-.gallery-illustration--lighting::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 12%;
-  width: 2px;
-  height: 40px;
-  transform: translateX(-50%);
-  background: linear-gradient(
-    to bottom,
-    rgba(248, 250, 252, 0.8),
-    rgba(248, 250, 252, 0)
-  );
+  height: 260px;
+  /* sabit kutu yüksekliği */
+  border-radius: 1.1rem 1.1rem 0 0;
+  object-fit: fill;
+  /* 🔥 resim TAMAMEN görünsün, kırpma yok */
+  background-color: #020617;
+  /* letterbox alan için koyu zemin */
 }
 
 .gallery-item figcaption {
   padding: 0.8rem 1rem 1rem;
   font-size: 0.85rem;
   color: var(--muted);
+}
+
+/* Mobilde tek sütuna düşsün */
+@media (max-width: 900px) {
+  .gallery {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }
 
 /* FAQ */
